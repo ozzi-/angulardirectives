@@ -1,1 +1,1 @@
-var app = angular.module('collapse',['ui.bootstrap','ngAnimate','directives']);
+var app = angular.module('angulardirectives',['ui.bootstrap','ngAnimate','directives']);

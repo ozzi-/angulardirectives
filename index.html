@@ -1,38 +1,57 @@
 <!doctype html>
-<html ng-app="collapse">
-  <head>
-    <title>Collapse</title>
-	<script src="https://code.jquery.com/jquery-1.12.3.min.js" integrity="sha256-aaODHAgvwQW1bFOGXMeX+pC4PZIPsvn2h1sArYOhgXQ=" crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/1.3.1/ui-bootstrap-tpls.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.0/angular-animate.min.js"></script>
-	
-	
-	<script type="text/javascript" src="app.js"></script>
-	<script type="text/javascript" src="directives.js"></script>
-  </head>
-  <body>
-  
- 
-	<message closable msg="Message Text - Success" ty="success"></message>
-	<br>
-	<message msg="Message Text - Warning" ty="warning"></message>
-	<br>
-	<glyph gl="arrow-left" co="#FF0000"></glyph>
-	<br>
-	<glyph gl="flag" co="#33CC33"></glyph>
+<html ng-app="angulardirectives">
+	<head>
+		<title>angulardirectives</title>
+		<script src="https://code.jquery.com/jquery-1.12.3.min.js" integrity="sha256-aaODHAgvwQW1bFOGXMeX+pC4PZIPsvn2h1sArYOhgXQ=" crossorigin="anonymous"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/1.3.1/ui-bootstrap-tpls.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.0/angular-animate.min.js"></script>
 
-	<br>
-	<collapse title="Title">
-		<i>Content</i>
-	</collapse>
-	<br>
-	<br>
-	<collapse title="Another Title">
-		<i>More Content!</i>
-	</collapse>
-  </body>
+
+		<script type="text/javascript" src="app.js"></script>
+		<script type="text/javascript" src="directives.js"></script>
+	</head>
+	<body>
+	
+	<span>
+&#x9;&#x9;dd/MM/yy:
+&#x9;&#x9;&#x3C;date-picker nm=&#x22;picker1&#x22; dt=&#x22;date&#x22; fr=&#x22;dd/MM/yy&#x22; sdt=&#x22;&#x27;2016-02-06&#x27;&#x22;&#x3E;&#x3C;/date-picker&#x3E;
+&#x9;&#x9;<br>
+&#x9;&#x9;
+&#x9;&#x9;yyyy-MM-dd:
+&#x9;&#x9;&#x3C;date-picker nm=&#x22;picker2&#x22; dt=&#x22;date2&#x22; fr=&#x22;yyyy-MM-dd&#x22;&#x3E;&#x3C;/date-picker&#x3E;
+&#x9;&#x9;
+		<hr>
+		=
+		<hr>
+		dd/MM/yy:
+		<date-picker nm="picker1" dt="date" fr="dd/MM/yy" sdt="'2016-02-06'"></date-picker>
+		<br>= {{date}}
+		<br><br>
+		yyyy-MM-dd:
+		<date-picker nm="picker2" dt="date2" fr="yyyy-MM-dd"></date-picker>
+		<br>= {{date2}}
+		<br>
+		<message closable msg="Message Text - Success" ty="success"></message>
+		<br>
+		<message msg="Message Text - Warning" ty="warning"></message>
+		<br>
+		<glyph gl="arrow-left" co="#FF0000"></glyph>
+		<br>
+		<glyph gl="flag" co="#33CC33"></glyph>
+
+		<br>
+		<collapse title="Title">
+			<i>Content</i>
+		</collapse>
+		<br>
+		<br>
+		<collapse title="Another Title">
+			<i>More Content!</i>
+		</collapse>
+	</span>
+	</body>
 </html>

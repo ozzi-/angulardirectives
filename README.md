@@ -12,4 +12,9 @@ Easy to use glyphs with class and color parameters (https://getbootstrap.com/com
 Message box (http://www.w3schools.com/bootstrap/bootstrap_alerts.asp), either closable or no.
 ![glyph](https://i.imgur.com/K90LkXR.png)
 
+### Date Picker
+Date Picker supporting easy date formatting & default date
+![date picker](https://i.imgur.com/R3JQKxn.png)
+
+
 ### More to come
