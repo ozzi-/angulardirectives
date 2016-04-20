@@ -24,6 +24,18 @@ directivesModule.directive('glyph', function(){
 	}
 });
 
+directivesModule.directive('panel', function(){
+	return {
+		restrict: 'E',
+		templateUrl: 'view/directives/helper/panel.html',
+		transclude: true,
+		scope: {
+			h: "@h"
+		}
+	}
+});
+
+
 
 directivesModule.directive('message', function(){
 	return {
